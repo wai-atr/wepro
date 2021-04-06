@@ -1,0 +1,65 @@
+
+page {
+  background: #fafafa;
+  width: 100%;
+}
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+.bg-img {
+  width: 100%;
+}
+.title {
+  position: absolute;
+  font-size: 35rpx;
+  font-weight: 600;
+  height: 44rpx;
+  top: 112rpx;
+  left: 32rpx;
+}
+.banner {
+  position: absolute;
+  text-align: center;
+  width: 686rpx;
+  left: 32rpx;
+  top: 208rpx;
+  border-radius: 40rpx;
+  overflow: hidden;
+  box-shadow: 0rpx 30rpx 80rpx rgb(0,0,0,0.06);
+}
+.swiper {
+  height: 240rpx;
+  text-align: center;
+}
+.swiper_item {
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+}
+.search {
+  position: absolute;
+  width: 686rpx;
+  height: 88rpx;
+  top: 468rpx;
+  left: 32rpx;
+  border-radius: 200rpx;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 12rpx 28rpx 120rpx rgb(0,0,0,0.06);
+}
+.bigButton {
+  position: absolute;
+  width: 328rpx;
+  height: 254rpx;
+  top: 624rpx;
+  background-color: #ffffff;
+  border-radius: 52rpx;
+  box-shadow: 6rpx 14rpx 100rpx rgb(0,0,0,0.06);
+}
+._button::after {
+  border: none;
+}
