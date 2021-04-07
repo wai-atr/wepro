@@ -1,0 +1,5 @@
+<template name="39ab50de">
+  <view class="_div data-v-8e7c7c48"><input focus="true" class="_input data-v-8e7c7c48 searchInput" />
+    <view class="_div data-v-8e7c7c48 searchButton">搜索</view>
+  </view>
+</template>

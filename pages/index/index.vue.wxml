@@ -19,6 +19,27 @@
           <view class="_div data-v-06594d82 swiper_item">CCCC</view>
         </swiper-item>
       </swiper>
-    </view> <button class="_button data-v-06594d82 search" style="text-align: left;font-weight: 100; background-color: #fafafa;border:none" type="button">搜索</button>> <button class="_button data-v-06594d82 bigButton" style="left: 32rpx" type="button">寻物启事</button> <button class="_button data-v-06594d82 bigButton" style="left: 390rpx" type="button">失物招领</button>
+    </view>
+    <buttom class="_buttom data-v-06594d82 search" style="background-color: #fafafa;border:none" type="button" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+      <view class="_div data-v-06594d82 searchImg"></view>
+      <view class="_div data-v-06594d82 searchText">搜索</view>
+    </buttom> <button class="_button data-v-06594d82 bigButton" style="left: 32rpx" type="button">
+      <view class="_div data-v-06594d82 search_1"></view>
+      <view class="_div data-v-06594d82 search_1_text">寻物启事</view>
+    </button> <button class="_button data-v-06594d82 smallButtom" style="left: 208rpx;">
+      <view class="_div data-v-06594d82 add"></view>
+      <view class="_div data-v-06594d82 smallButtom_text">发布</view>
+    </button> <button class="_button data-v-06594d82 bigButton" style="left: 390rpx" type="button">
+      <view class="_div data-v-06594d82 search_2"></view>
+      <view class="_div data-v-06594d82 search_1_text">失物招领</view>
+    </button> <button class="_button data-v-06594d82 smallButtom" style="left: 576rpx">
+      <view class="_div data-v-06594d82 add"></view>
+      <view class="_div data-v-06594d82 smallButtom_text">发布</view>
+    </button>
+    <view class="_div data-v-06594d82 notice">
+      <view class="_div data-v-06594d82 noticeImg"></view>
+      <view class="_div data-v-06594d82 noticeTitle">最新公告</view>
+      <view class="_div data-v-06594d82 noticeBar"></view>
+    </view>
   </view>
 </template>

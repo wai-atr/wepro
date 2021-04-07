@@ -1,0 +1,18 @@
+
+.searchInput.data-v-8e7c7c48 {
+  position: absolute;
+  top: 200rpx;
+  height: 50rpx;
+  width: 600rpx;
+  background-color: #EBF733;
+  focus: true;
+}
+.searchButton.data-v-8e7c7c48 {
+  position: absolute;
+  top: 200rpx;
+  height: 50rpx;
+  width: 100rpx;
+  left: 610rpx;
+  background-color: darkorchid;
+  line-height: 50rpx;
+}
