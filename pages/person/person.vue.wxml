@@ -1,3 +1,6 @@
 <template name="79b75af1">
-  <view class="_div data-v-4f4ec53c"> person! </view>
+  <view class="_div data-v-4f4ec53c personContainer">
+    <image wx:if="{{isShow}}" class="_img data-v-4f4ec53c userIcon" src="{{userInfo.avatarUrl}}" alt></image><button wx:else class="_button data-v-4f4ec53c authorizationButton" open-type="getUserInfo" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">点击获取用户信息</button>
+    <view class="_div data-v-4f4ec53c userNick">Hello {{userInfo.nickName}}</view>
+  </view>
 </template>

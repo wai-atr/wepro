@@ -1,5 +1,8 @@
 {
   "pages": [
+    "pages/test/main",
+    "pages/publishSuccess/main",
+    "pages/lostThing/main",
     "pages/index/main",
     "pages/message/main",
     "pages/person/main",

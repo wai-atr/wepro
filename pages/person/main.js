@@ -1,15 +1,15 @@
 require("../../common/manifest.js")
 require("../../common/vendor.js")
-global.webpackJsonpMpvue([2],{
+global.webpackJsonpMpvue([5],{
 
-/***/ 18:
+/***/ 27:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__person__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__person__ = __webpack_require__(28);
 
 
 
@@ -18,16 +18,16 @@ app.$mount();
 
 /***/ }),
 
-/***/ 19:
+/***/ 28:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_lib_selector_type_script_index_0_person_vue__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_mpvue_loader_lib_template_compiler_index_id_data_v_4f4ec53c_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_fileExt_template_wxml_script_js_style_wxss_platform_wx_node_modules_mpvue_loader_lib_selector_type_template_index_0_person_vue__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_lib_selector_type_script_index_0_person_vue__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_mpvue_loader_lib_template_compiler_index_id_data_v_4f4ec53c_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_fileExt_template_wxml_script_js_style_wxss_platform_wx_node_modules_mpvue_loader_lib_selector_type_template_index_0_person_vue__ = __webpack_require__(31);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(20)
+  __webpack_require__(29)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -72,14 +72,14 @@ if (false) {(function () {
 
 /***/ }),
 
-/***/ 20:
+/***/ 29:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 21:
+/***/ 30:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -89,19 +89,81 @@ if (false) {(function () {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
-//import card from '@/components/card'
 
-/* harmony default export */ __webpack_exports__["a"] = ({});
+/* harmony default export */ __webpack_exports__["a"] = ({
+  data: function data() {
+
+    return {
+      userInfo: {},
+      isShow: false
+    };
+  },
+
+
+  methods: {
+    getUserInfo: function getUserInfo() {
+      var _this = this;
+
+      var that = this;
+
+      wx.getUserProfile({
+        desc: '获取你的昵称、头像、地区及性别',
+
+        // 用户点击同意授权
+        success: function success(res) {
+          that.isShow = !_this.isShow;
+          console.log(res);
+          that.userInfo = res.userInfo;
+        },
+
+        //用户点击拒绝
+        fail: function fail(res) {
+          console.log(res);
+        }
+      });
+    },
+
+    beforeMount: function beforeMount() {}
+  }
+
+});
 
 /***/ }),
 
-/***/ 22:
+/***/ 31:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_vm._v("\n  person!\n")])
+  return _c('div', {
+    staticClass: "personContainer"
+  }, [(_vm.isShow) ? _c('img', {
+    staticClass: "userIcon",
+    attrs: {
+      "src": _vm.userInfo.avatarUrl,
+      "alt": ""
+    }
+  }) : _c('Button', {
+    staticClass: "authorizationButton",
+    attrs: {
+      "open-type": "getUserInfo",
+      "eventid": '0',
+      "mpcomid": '0'
+    },
+    on: {
+      "tap": _vm.getUserInfo
+    }
+  }, [_vm._v("点击获取用户信息")]), _vm._v(" "), _c('div', {
+    staticClass: "userNick"
+  }, [_vm._v("Hello " + _vm._s(_vm.userInfo.nickName))])], 1)
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -116,4 +178,4 @@ if (false) {
 
 /***/ })
 
-},[18]);
+},[27]);

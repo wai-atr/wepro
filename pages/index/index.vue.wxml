@@ -20,7 +20,7 @@
         </swiper-item>
       </swiper>
     </view>
-    <buttom class="_buttom data-v-06594d82 search" style="background-color: #fafafa;border:none" type="button" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+    <buttom class="_buttom data-v-06594d82 search" style="border:none" type="button" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
       <view class="_div data-v-06594d82 searchImg"></view>
       <view class="_div data-v-06594d82 searchText">搜索</view>
     </buttom> <button class="_button data-v-06594d82 bigButton" style="left: 32rpx" type="button">
@@ -39,7 +39,11 @@
     <view class="_div data-v-06594d82 notice">
       <view class="_div data-v-06594d82 noticeImg"></view>
       <view class="_div data-v-06594d82 noticeTitle">最新公告</view>
-      <view class="_div data-v-06594d82 noticeBar"></view>
+      <view class="_div data-v-06594d82 noticeBar">
+        <view class="_div data-v-06594d82 signal" wx:key="index" key="{{index}}" wx:for="{{notices}}" wx:for-index="index" wx:for-item="item">
+          <view class="_div data-v-06594d82 noticeText">{{item}}</view>
+        </view>
+      </view>
     </view>
   </view>
 </template>

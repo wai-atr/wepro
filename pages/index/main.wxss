@@ -49,7 +49,7 @@ page {
   border-radius: 200rpx;
   overflow: hidden;
   background-color: #ffffff;
-  box-shadow: 12rpx 28rpx 120rpx rgb(0,0,0,0.06);
+  box-shadow: 0rpx 20rpx 80rpx rgba(0,0,0,0.05);
 }
 .searchImg {
   position: absolute;
@@ -78,21 +78,21 @@ page {
   top: 624rpx;
   background-color: #ffffff;
   border-radius: 52rpx;
-  box-shadow: 6rpx 14rpx 100rpx rgb(0,0,0,0.06);
+  box-shadow: 8rpx 60rpx 80rpx rgba(0,0,0,0.03);
 }
 .search_1 {
   position: absolute;
   width: 58rpx;
   height: 56rpx;
-  top: 66rpx;
+  top: 70rpx;
   left: 58rpx;
   background-size: cover;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA4CAYAAACsc+sjAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAgKSURBVHgB3VpNaBxVHP+/t0kozQa3l5qA4IRayUdDNj0o1WI3eBIRUyr2JNmAeNBDEy96Kdmilyo0qaAXhSQISg8lCVhQPGRz8NpuaZsWW+n2YlpzyEJSmo/def7/s2+3M2/efOzHtKU/WHbnzXsz+3v/7/8MgybBMIxER0fHiGmag4wxAz9JHE4IIRKVOTiWx+M8/izg9zIe565fv56FJwAGDYDIxePxU/gzJT+1/wHGCrg5C/g9FyXpuoj29fUl8Y+dwk8amgiSeKlUOrOysjILTUZNRKV6TqLajUOEiIJwaKK9vb0jLS0tM3abixp4r1kifOvWrTw0iFBEBwYGpkJKMYv2djUWi2V3d3dzW1tbhXw+X6ic7OnpMXCzDLwWqf4xKNu178aRdPFaw42S9SUqnc08+DsaInJ+c3Nz2k4qLHATR5B4xaF53gMJj127dm0B6oQnUUlyCX8mPaY0RFCFlPYM+BDGDUnfuHFjDuqAJ9FDhw5dAW+SC0hwrBkEVaBHT6P0JikWe0wZricMaYn62SSOT+CuTkOEIOminS95kC0Ui8WhWm2WqwO0o14k0dGMRU2SQCRaW1uH8GdOczqBKj4PNcIhUdpJvMEVXQghkl5xjey5vb19knNOjiWPOz7WjJCQTCYTeC0vP3EGVTgDIeEg2t/fP+OR7XheFG2ZMqSMmtOi6g3lcrmmOCkvNcZN6A67oVXVlWldWp1AQduH5CR+TasagMfGzs6OAU0AEaHQojsnvXQoVImi2k2pJ0kNKTPRLUSHRTfJgB6Ftra2PDQJ0sue15xK4WanIAQsoqQeoIlfSFSbfpEkKaZ5XJOqkYlmqK0dKL0MlGO3ihEIAYso2sCkeoKkqXM+5JXBW5IUX7ujqD7kxumkOkpOK2i9RRTVNqWeIGmqY9IxTHpcixzW8SiSiApQqhTa1Osn0B8ESrWFnBA5D/UEql9Wc6NR3Vyo0dXr8Gi1xyhipBIxblgDQhSYiZ9YqRDff9uKpyRVjAyL6JxG7WtlgTDrd/0WnJTSjGdV2yT1QMdEyYRjIqk4JhEZqAMbaz0pLvioYGykhJ6bYl013jH8FaMjDptr/UjazOK8xSNv8wW8p4OoTiNVkOoOasavqgOkHjppIvlhqAHrd43Ew7W+Sfzz60zwJdy2NATVuHieNgN/zfy5aM64TwsjyE65LhDjn8+6JnI+qlmfrSUDIgm2te/FzAudWZ0FfDwuEl2d7vGguK0lSpmNZm5KHUA7Dl0ykRSlBA1oEAcPCN1w0m9Ni04dcWzdfkwOS7cYk4JQhfDmf33YgkEVbRI64lAzuG7w5s2b9xyTOHepGUk9TFKAtkgZVxoixpHX+Pt+57VEVcPWqbdsRPuC1BUi7hhW8MbrYsS6nweIqEsq29vbL0CDWMe4aDmdCLCx6R6Lx2nzIbOx2pPSrSFn5CKKY/sgAD6tDgutsVjoyqJWrD5wN0a6OssOisXcxQmBowrqqniH88Fw45rjF7vKuypSEBFu33GPdbRXfybR+aXV86S699RBmVJV4VVyYeGr9cbMOx9uGH/f0Y8ffMV+JFwxn1TXJS1WzkKqkN41C264kmmyzSileV+jtq+64ipLifXel+0jHKsRXSxMaAraZc28UVnLVtEa4ymIEPF2d7LglGYZD7fhuP2Yh5WWLJFUUEcurYwdgwhxGI3l49HHZLteFI7jCoSSyVlxFB3LouaajoKWNgTnhUj5mAERg4jN/2LCzz+aMP+rAF3uyzlzFCsWUWxxzoKmoMWHOw6ngt43o8yjZvKsc5m2Xm06iNzBA97n1ZzaIurVpkCnNG63VapUqEuOyTzNPaPtmDOoqyqJGlUXJpvFd0F5jFdrjxZjGF3DgGcA8f0rVX7VXFfaoKtPRIkBqvAUPCVcxuD30xyDS38wWL1f01KHYFxByecpWgb7Qtoerx0ba33zTIRrQQZh+S8GX5x+/BfJLn84Z2qdjwY5lOhQ5cBVvaD6UvzRqWkGG1PBkhXuTKseUJr39VmnHEiin37Ow0rWkQi5iJJzoQa0bqV0TlfUJMGBkhmqGPfDhYsMPvqEa6uU0GRLpiPB0dajsgHtpaZJDEdLspHtQnHPnhwaRF29XYvEBIep71nwvACyu0oS5HtFlF4GvzwTdPkm2Jj6BHrjQV8Gu5WhE3uSHEmRPjopesHHZmfRPh0PpgLfSkG7HEdCvrZZeS+Imt6k+pTYY857128NESI7vHCRw+Wr4EuQ0jxdDWqd05DdLZnd+7qc8T3U6zfykeJ8ULFtXbAs5dx772C9OiAc3nvzIYN/7xNBBrf/gVDSO3lCwMRnwgox9NFBIeuSpvW/ICTkc5eM+jggKpAUT38p4LAtYw0i+923Zr6z0xxWpUmo+V1Akq58lpqCCNCBZdjJD8qS1LU1L/0O8NU33Gs5PbIcRmfqrrGhTsgcmF6EakpyEETQjnrI1k20AlJpesgjH1lY7+iGXUvq+dZRLGCPOlU0DGol2zBRFaTaaMvW+354swTadLV1+uEJSL3UKYyuLoChwfo67nbM/8YKZ88xr411kG06UT+srycTLTs747XEWC8IU5wvPnqUefPdvSOoTV6t1SrZJ0q0AoqzMc4ynFHbhRlh1wnKwU0xVxRi2u5ZKUsLIvtUiNph9YCx68g4HxQgksxp43mg9+9NsYz14kJxayu3r1v/6kAA2dxTJ9pMyFdiiaz7oRg8Z5BxfgmcZLMcnjOQ4yGbhMf1aJbeTfwfLJH0i+FyFooAAAAASUVORK5CYII=);
 }
 .search_2 {
   position: absolute;
-  width: 58rpx;
-  height: 56rpx;
+  width: 60rpx;
+  height: 60rpx;
   top: 66rpx;
   left: 58rpx;
   background-size: cover;
@@ -115,7 +115,7 @@ page {
   top: 656rpx;
   background-color: #EBF733;
   border-radius: 41rpx;
-  box-shadow: 6rpx 14rpx 100rpx rgb(0,0,0,0.06);
+  box-shadow: 6rpx 14rpx 100rpx rgba(0,0,0,0.06);
 }
 .add {
   position: absolute;
@@ -169,6 +169,8 @@ page {
 }
 .noticeBar {
   position: absolute;
+  display: flex;
+  flex-direction: column;
   width: 686rpx;
   height: 232rpx;
   bottom: 0rpx;
@@ -176,4 +178,24 @@ page {
   background-color: #ffffff;
   border-radius: 40rpx;
   box-shadow: 8rpx 30rpx 100rpx rgba(0,0,0,0.03);
+}
+.signal {
+  background-color: #EBF733;
+  width: 18rpx;
+  height: 18rpx;
+  border-radius: 18rpx;
+  margin-top: 62rpx;
+  margin-left: 48rpx;
+}
+.noticeText {
+  margin-top: -12.5rpx;
+  margin-left: 50rpx;
+  height: 40rpx;
+  width: 500rpx;
+  font-size: 28rpx;
+  font-weight: 400;
+  line-height: 40rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
